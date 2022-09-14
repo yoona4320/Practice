@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+   <definition name="baseLayout"  template="/WEB-INF/views/layout.jsp">
+      <put-attribute name="title" value="" />
+      <put-attribute name="top" value="/WEB-INF/views/top.jsp" />
+      <put-attribute name="body" value="" />
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+   </definition>
+
+	
+	<!-- jsp 필요할때마다 추가 -->
+   <definition name="main" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/main.jsp" />
+   </definition>
+   
+   
+   <definition name="meminput" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/meminput.jsp" />
+   </definition>   
+   <definition name="memout" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/memout.jsp" />
+   </definition>
+   
+   
+   <definition name="loginform" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/loginform.jsp" />
+   </definition>
+   
+   
+   <definition name="updateui" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/updateui.jsp" />
+   </definition>
+   <definition name="deleteui" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/deleteui.jsp" />
+   </definition>   
+   <definition name="deleteform" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/deleteform.jsp" />
+   </definition>
+   
+   
+    <definition name="boardinput" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/boardinput.jsp" />
+   </definition>   
+   <definition name="boardout" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/boardout.jsp" />
+   </definition>
+   
+   <definition name="boarddetail" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/boarddetail.jsp" />
+   </definition>
+   <definition name="replyform" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/replyform.jsp" />
+   </definition>
+   
+ </tiles-definitions>
